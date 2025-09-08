@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { API_URL } from '@/config/env';
 
 async function getProjects() {
@@ -7,9 +9,10 @@ async function getProjects() {
     return data.result || [];
   } catch (error) {
     console.error('Error al obtener proyectos:', error);
-    return [];
+    return []; // fallback en caso de error
   }
 }
+
 async function getBlogs() {
   try {
     const response = await fetch(`${API_URL}/blog`);
@@ -17,7 +20,7 @@ async function getBlogs() {
     return data.result || [];
   } catch (error) {
     console.error('Error al obtener blogs:', error);
-    return [];
+    return []; // fallback en caso de error
   }
 }
 
