@@ -45,6 +45,9 @@ export async function generateMetadata({
   };
 }
 
+// Forzar renderizado dinámico para evitar errores en build
+export const dynamic = 'force-dynamic';
+
 export default async function BlogPostPage({
   params,
 }: {
