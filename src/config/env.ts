@@ -1,0 +1,6 @@
+export const {
+  API_URL,
+  RECAPTCHA_SECRET_KEY,
+  NEXT_PUBLIC_BASE_URL,
+  CONTACT_FORM_POST_URL,
+} = process.env;

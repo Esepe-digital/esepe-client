@@ -1,0 +1,56 @@
+pipelines:
+  branches:
+    develop:
+      - step:
+          max-time: 14
+          name: 'Deploying to Test environment'
+          deployment: Test
+          script:
+            - echo "Deploying to Test Environment"
+            - pipe: atlassian/ssh-run:0.1.4
+              variables:
+                SSH_USER: $SSH_USER_QA
+                SERVER: $SSH_SERVER_QA
+                MODE: 'command'
+                COMMAND: './deployment-scripts/deploy-esepe-next.sh'
+            - echo "Successfully deployed to test environment"
+
+    qa:
+      - step:
+          max-time: 14
+          name: 'Deploying to UAT environment'
+          deployment: Production
+          script:
+            - echo "Deploying to UAT Environment"
+            - pipe: atlassian/ssh-run:0.1.4
+              variables:
+                SSH_USER: $SSH_USER_UAT
+                SERVER: $SSH_SERVER_UAT
+                MODE: 'command'
+                COMMAND: './deployment-scripts/deploy-esepe-next-uat.sh'
+            - echo "Successfully deployed to UAT environment"
+    main:
+      - step:
+          max-time: 14
+          name: 'Deploying to Production environment'
+          deployment: Production
+          script:
+            - echo "Deploying to Production Environment"
+            - pipe: atlassian/ssh-run:0.1.4
+              variables:
+                SSH_USER: $SSH_USER_PROD
+                SERVER: $SSH_SERVER_PROD
+                MODE: 'command'
+                COMMAND: './deployment-scripts/deploy-esepe-next-prod.sh'
+            - echo "Successfully deployed to production environment"
+
+      - step:
+          name: 'Purge Cloudflare Cache'
+          image: curlimages/curl:latest
+          script:
+            - echo "Purging Cloudflare Cache..."
+            - |
+              curl -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+                -H "Authorization: Bearer ${CF_API_TOKEN}" \
+                -H "Content-Type: application/json" \
+                --data '{"purge_everything":true}'
