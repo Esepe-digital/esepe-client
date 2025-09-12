@@ -64,6 +64,10 @@ const nextConfig: NextConfig = {
         hostname: 'api.esepe.cl',
         protocol: 'https',
       },
+      {
+        hostname: 'topclass-entertainment.com',
+        protocol: 'https',
+      },
     ],
   },
 };
