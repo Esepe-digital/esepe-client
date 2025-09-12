@@ -1,5 +1,3 @@
-export const dynamic = 'force-dynamic'; // <-- Esto fuerza la página a ser dinámica
-
 import esepeLogo from '@/assets/logos/esepe-logo.png';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -20,6 +18,7 @@ interface ApiResponse {
   result: PageData[];
 }
 
+export const dynamic = 'force-dynamic'; 
 async function getLegalesData(): Promise<PageData | null> {
   try {
     const response = await fetch(

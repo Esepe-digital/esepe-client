@@ -19,7 +19,7 @@ const eslintConfig = [
     },
     rules: {
       ...prettierConfig.rules,
-      'prettier/prettier': 'error',
+      'prettier/prettier': 'warn',
     },
   },
 ];

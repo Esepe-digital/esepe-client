@@ -8,6 +8,7 @@ import AvailableModels from '@/components/proyecto/available-models';
 import ContactForm from '@/components/contact-form';
 import { PropertiesResponse } from '@/interfaces/api/propiedadesResponse';
 
+export const dynamic = 'force-dynamic'; 
 async function fetchProjectData(slug: string) {
   const projectBySlugResponse = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/proyectos/${slug}`,
