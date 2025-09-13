@@ -229,7 +229,7 @@ export default async function Home() {
           </div>
           <div className="p-4">
             <ResponsiveIframe
-              url={`https://topclass-entertainment.com/iframe-3d-esepe/index.html `}
+              url={`https://topclass-entertainment.com/iframe-3d-esepe/Buin/index.html `}
               isZoomable
             />
           </div>
