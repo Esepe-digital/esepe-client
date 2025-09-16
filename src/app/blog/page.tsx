@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Forzar renderizado dinámico para evitar errores en build siempre
+// Forzar renderizado dinámico para evitar errores en build
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
