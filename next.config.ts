@@ -69,6 +69,8 @@ const nextConfig: NextConfig = {
         protocol: 'https',
       },
     ],
+    formats: ['image/avif', 'image/webp', 'image/jpeg', 'image/png', 'image/jpg'], 
+    deviceSizes: [320, 480, 640, 750, 828, 1080, 1200, 1536, 1920, 2048, 3840],
   },
 };
 
