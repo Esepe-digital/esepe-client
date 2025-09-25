@@ -46,7 +46,7 @@ export default async function RootLayout({
       {process.env.NEXT_PUBLIC_ENVIRONMENT === 'production' && (
         <GoogleTagManager gtmId="GTM-WL9RHFB" />
       )}
-      {/* GTM-WL9RHFB */}
+      { 'GTM-WL9RHFB' }
       {process.env.NEXT_PUBLIC_ENVIRONMENT === 'production' && (
         <GoogleAnalytics gaId="AW-10877400073" />
       )}
