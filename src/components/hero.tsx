@@ -182,7 +182,7 @@ export function Hero({ data }: InicioResponse) {
             >
               <Button
                 asChild
-                className={`px-12 py-6 w-full h-full text-transparent bg-black/0 hover:bg-black/10 ${
+                className={`px-12 py-6 w-full h-full text-transparent ${
                   isLoading && pathname !== boton?.url
                     ? 'opacity-50 cursor-not-allowed'
                     : ''
