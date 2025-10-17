@@ -150,7 +150,7 @@ export function Hero({ data }: InicioResponse) {
         transition={{ duration: 1, delay: 0.5 }}
         className="absolute inset-0 z-10 flex items-center justify-center"
       >
-        <div className="container px-4 text-center text-white">
+        <div className="container h-full px-4 text-center text-white">
           {titulo_del_banner && (
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -178,11 +178,11 @@ export function Hero({ data }: InicioResponse) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.4 }}
-              className="mt-4"
+              className="mt-4 h-full"
             >
               <Button
                 asChild
-                className={`px-12 py-6 text-white bg-black/30 border-2 border-white rounded-full hover:bg-black/50 hover:border-white ${
+                className={`px-12 py-6 w-full h-full text-transparent bg-black/0 border-2 hover:bg-black/10 ${
                   isLoading && pathname !== boton?.url
                     ? 'opacity-50 cursor-not-allowed'
                     : ''
