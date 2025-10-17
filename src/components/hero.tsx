@@ -178,11 +178,11 @@ export function Hero({ data }: InicioResponse) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.4 }}
-              className="mt-4 h-full"
+              className="h-full"
             >
               <Button
                 asChild
-                className={`px-12 py-6 w-full h-full text-transparent bg-black/0 border-2 hover:bg-black/10 ${
+                className={`px-12 py-6 w-full h-full text-transparent bg-black/0 hover:bg-black/10 ${
                   isLoading && pathname !== boton?.url
                     ? 'opacity-50 cursor-not-allowed'
                     : ''
