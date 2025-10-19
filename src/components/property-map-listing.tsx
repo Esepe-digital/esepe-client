@@ -277,7 +277,7 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                                   {project.name === 'San Francisco' && (
                                     <span>77,64</span>
                                   )}
-                                  {project.name === 'Altos del Valle' && (
+                                  {project.name === 'Altos Del Valle' && (
                                     <span>73,90</span>
                                   )}
                                   {project.name === 'Volare' && (
