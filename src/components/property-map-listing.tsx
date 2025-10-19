@@ -268,8 +268,13 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                             <div className="flex items-center gap-1">
                               <AngleIcon className="w-7 h-7" />
                               <span>
-                                {project?.construccion}{' '}
-                                m²x
+                                {/* {project?.construccion
+                                  ?.replace('.00', '')
+                                  .replace('.', ',')} */}
+                                  {project.name === 'Altos del Valle Oriente'(
+                                    <spa>74,71</spa></span>
+                                  )}{' '}
+                                m²
                               </span>
                             </div>
                           </div>
