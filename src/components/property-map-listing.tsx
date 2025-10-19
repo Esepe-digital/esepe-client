@@ -271,7 +271,7 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                                 {/* {project?.construccion
                                   ?.replace('.00', '')
                                   .replace('.', ',')} */}
-                                  {project.name === 'Altos del Valle Oriente'(
+                                  {project.name === 'Altos del Valle Oriente' && (
                                     <span>74,71</span>
                                   )}{' '}
                                 m²
