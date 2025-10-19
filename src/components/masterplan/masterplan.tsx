@@ -424,10 +424,10 @@ export default function Masterplan({
                   <h2 className="font-bold text-base mb-2">Estado de Etapas</h2>
                   <div className="space-y-2 text-sm">
                     <p className="font-semibold text-gray-800">
-                      Etapa 1 y 2: <span>Venta en verde</span>
+                      Etapa 1 y 2: <span>Entrega Inmediata</span>
                     </p>
                     <p className="font-semibold text-gray-800">
-                      Etapa 3: <span>Entrega Inmediata</span>
+                      Etapa 3: <span>Venta en verde</span>
                     </p>
                   </div>
                 </div>
