@@ -172,7 +172,7 @@ export const ModelCard = ({
             </div>
           </div>
 
-          <div className="mt-4">
+          <div className={` ${!precio ? 'hidden' : 'mt-4'}`} >
             <div className="pt-4 mb-4 border-t border-gray-200"></div>
 
             <div className="space-y-3">
