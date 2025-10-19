@@ -268,9 +268,7 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                             <div className="flex items-center gap-1">
                               <AngleIcon className="w-7 h-7" />
                               <span>
-                                {project?.construccion
-                                  ?.replace('.00', '')
-                                  .replace('.', ',')}{' '}
+                                {project?.construccion}{' '}
                                 m²
                               </span>
                             </div>
