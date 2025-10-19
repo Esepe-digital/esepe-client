@@ -272,7 +272,7 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                                   ?.replace('.00', '')
                                   .replace('.', ',')} */}
                                   {project.name === 'Altos del Valle Oriente'(
-                                    <span>74,71</spa></span>
+                                    <span>74,71</span>
                                   )}{' '}
                                 m²
                               </span>
