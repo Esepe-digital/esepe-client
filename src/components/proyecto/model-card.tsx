@@ -100,7 +100,7 @@ export const ModelCard = ({
               {nombre}
             </h3>
 
-            <div className="space-y-3">
+            <div className={` ${!precio ? 'hidden' : 'space-y-3'}`} >
               <div className="flex items-center gap-2">
                 <RoomIcon
                   className={` ${!precio ? 'text-[#AFAFAF]' : 'text-gray-500'}`}
@@ -121,6 +121,7 @@ export const ModelCard = ({
                   {banos} Baños
                 </span>
               </div>
+            
               {/* Construcción */}
               <div className="flex items-center gap-2">
                 <AngleIcon
