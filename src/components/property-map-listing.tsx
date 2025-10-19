@@ -273,7 +273,26 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                                   .replace('.', ',')} */}
                                   {project.name === 'Altos del Valle Oriente' && (
                                     <span>74,71</span>
-                                  )}{' '}
+                                  )}
+                                  {project.name === 'San Francisco' && (
+                                    <span>77,64</span>
+                                  )}
+                                  {project.name === 'Altos del Valle' && (
+                                    <span>73,90</span>
+                                  )}
+                                  {project.name === 'Volare' && (
+                                    <span>121,51</span>
+                                  )}
+                                  {project.name === 'Barrio Viña Carmen' && (
+                                    <span>55,17</span>
+                                  )}
+                                  {project.name === 'Parque Germania' && (
+                                    <span>29,50</span>
+                                  )}
+                                  {project.name === 'Padre Orellana' && (
+                                    <span>38</span>
+                                  )}
+                                  {' '}
                                 m²
                               </span>
                             </div>
