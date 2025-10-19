@@ -269,7 +269,7 @@ export default function PropertyMapListing({ data }: { data: ProjectCard[] }) {
                               <AngleIcon className="w-7 h-7" />
                               <span>
                                 {project?.construccion}{' '}
-                                m²
+                                m²x
                               </span>
                             </div>
                           </div>
