@@ -434,6 +434,51 @@ export default function Masterplan({
               </div>
             </div>
           )}
+          {proyecto === 'Altos del Valle Oriente' && (
+            <div className="mt-2">
+              {/* Static card for desktop */}
+              <div className="hidden sm:flex bg-white rounded-xl shadow-lg p-4 flex-col">
+                <div className="text-center">
+                  <h2 className="font-bold text-base mb-2">Estado del Proyecto</h2>
+                  <div className="space-y-2 text-sm">
+                    <p className="font-semibold text-gray-800">
+                      <span>Venta en verde</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          {proyecto === 'Altos Del Valle' && (
+            <div className="mt-2">
+              {/* Static card for desktop */}
+              <div className="hidden sm:flex bg-white rounded-xl shadow-lg p-4 flex-col">
+                <div className="text-center">
+                  <h2 className="font-bold text-base mb-2">Estado del Proyecto</h2>
+                  <div className="space-y-2 text-sm">
+                    <p className="font-semibold text-gray-800">
+                      <span>Entrega Inmediata</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          {proyecto === 'San Francisco' && (
+            <div className="mt-2">
+              {/* Static card for desktop */}
+              <div className="hidden sm:flex bg-white rounded-xl shadow-lg p-4 flex-col">
+                <div className="text-center">
+                  <h2 className="font-bold text-base mb-2">Estado del Proyecto</h2>
+                  <div className="space-y-2 text-sm">
+                    <p className="font-semibold text-gray-800">
+                      <span>Entrega Inmediata</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
         {/* Imagen y puntos del masterplan con zoom y pan */}
         <div
